@@ -1,5 +1,5 @@
 import {createClient} from "@supabase/supabase-js";
-import {Server} from "./server";
+import {Server} from "../nats/server";
 
 export async function subscribe(server: Server) {
     const supabase = createClient(

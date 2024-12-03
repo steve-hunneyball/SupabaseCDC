@@ -1,6 +1,6 @@
 import 'dotenv/config';
-import {Server} from "./server";
-import {subscribe} from "./subscriber";
+import {Server} from "./nats/server";
+import {subscribe} from "./supabase/subscriber";
 
 async function entry() {
     console.log("Establishing NATS connection...");
